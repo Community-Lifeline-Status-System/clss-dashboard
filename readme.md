@@ -42,17 +42,17 @@ This repo contains the Arcade expressions used in the CLSS Dashboard.
 **Data Expressions**
 | File | Used In |
 |------|---------|
-| [dataexp-assessment_related.js](./dataexp-assessment_related.js) | - List Element (Assessments-Relate)<br>- Assessment Indicators<br>- Pie: Assessments Per Incident |
-| [dataexp-assessment-content-details.js](./dataexp-assessment-content-details.js) | - Indicator Elements<br>- Lifeline Chart Element<br>- Indicator Table Element |
-| [dataexp-org_summary.js](./dataexp-org_summary.js) | - Organization List Element |
-| [dataexp-incidents.js](./dataexp-incidents.js) | - Incident List Element |
+| [dataexp-assessment_related.js](./arcade-samples/dataexp-assessment_related.js) | - List Element (Assessments-Relate)<br>- Assessment Indicators<br>- Pie: Assessments Per Incident |
+| [dataexp-assessment-content-details.js](./arcade-samples/dataexp-assessment-content-details.js) | - Indicator Elements<br>- Lifeline Chart Element<br>- Indicator Table Element |
+| [dataexp-org_summary.js](./arcade-samples/dataexp-org_summary.js) | - Organization List Element |
+| [dataexp-incidents.js](./arcade-samples/dataexp-incidents.js) | - Incident List Element |
 
 **Formatting Expressions:**
 | File | Used In |
 |------|---------|
-| [formattingexp-indicator-table.js](./formattingexp-indicator-table.js) | Indicator Table (assessment-content) |
-| [formattingexp-organization-list.js](./formattingexp-organization-list.js) | List (Organizations) Element |
-| [formattingexp-assessment-list.js](./formattingexp-assessment-list.js) | Assessment List |
+| [formattingexp-indicator-table.js](./arcade-samples/formattingexp-indicator-table.js) | Indicator Table (assessment-content) |
+| [formattingexp-organization-list.js](./arcade-samples/formattingexp-organization-list.js) | List (Organizations) Element |
+| [formattingexp-assessment-list.js](./arcade-samples/formattingexp-assessment-list.js) | Assessment List |
 
 
 ## Understanding the Data Structure
@@ -129,7 +129,7 @@ for (var assessment in assessments) {
 }
 return assessmentArray;
 ```
-[See the full Arcade expression for assessment data here.](./dataexp-assessment-content-details.js)
+[See the full Arcade expression for assessment data here.](./arcade-samples/dataexp-assessment-content-details.js)
 
 ## Accessing Related Tables
 Arcade supports combining data from related tables. For example, accessing the Comments field within indicators:
@@ -152,7 +152,7 @@ This concatenates all comments into a single field and calculates the total numb
 ### Dynamic Hazard Indicators
 The CLSS Dashboard contains a list of assessments that dynamically displays the hazard type and assessment status based on the data returned to it by the arcade data expression.
 
-[See the full Arcade expression for assessment-related data here.](./dataexp-assessment_related.js)
+[See the full Arcade expression for assessment-related data here.](./arcade-samples/dataexp-assessment_related.js)
 
 The sample arcade formatting expression code below provides an example of how to effectively visualize data on CLSS assessments: 
 
@@ -242,7 +242,7 @@ for (var org in orgs){
 
 }
 ```
-[See the full Arcade expression for organization summary data here.](./dataexp-org_summary.js)
+[See the full Arcade expression for organization summary data here.](./arcade-samples/dataexp-org_summary.js)
 
 ### Dynamic Status Indicators
 You can create dynamic indicators for incident statuses such as "Active" or "Closed" :
