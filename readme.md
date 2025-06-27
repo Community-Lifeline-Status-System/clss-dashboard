@@ -24,6 +24,8 @@ The **Community Lifeline Status System (CLSS) Feature Service** contains the fea
 
 This guide is designed for users with experience configuring ArcGIS Dashboards to effectively work with relational CLSS data and embedded JSON objects.
 
+📹[Watch the video](https://vimeo.com/1096988151?share=copy)
+
 ---
 
 ### Why Use Arcade?
